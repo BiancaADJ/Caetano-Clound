@@ -41,7 +41,7 @@ html, body{
   overflow: hidden; /* Remove barra de rolagem */
 }
 
-body.main{
+body.login{
   background-image: url(../img/wallpaper-azul-gradient.avif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body.main{
   padding-inline: 34%;
 }
 
-main.main{
+main.login{
   align-items: center;
   text-align: center;
   width: 100%;
@@ -57,19 +57,19 @@ main.main{
   font-family: "Poppins", sans-serif;
 }
 
-main.main section.login{
+main.login section.login{
   display: flex;
   flex-direction: column;
   height: 100%;
   border-radius: 10px;
 }
 
-main.main section.top,
-main.main section.bottom{
+main.login section.top,
+main.login section.bottom{
   flex: 1;
 }
 
-main.main section.top{
+main.login section.top{
   background-image: url(../img/vale-monte-sol-image.avif);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -83,7 +83,7 @@ main.main section.top{
   }
 }
 
-main.main section.bottom{
+main.login section.bottom{
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

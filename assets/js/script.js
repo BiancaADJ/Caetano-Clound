@@ -1,26 +1,27 @@
 function login(action){
   if(action === 1){
     // Login comum
-    var bd_user = document.querySelector('#main_user').value.trim();
-    var bd_pass = document.querySelector('#main_pass').value;
+    var bd_user = document.querySelector('#login_user').value.trim(); // Remove espaços antes e depois da string
+    var bd_pass = document.querySelector('#login_pass').value; // Pega o valor literal
 
     console.log(`Login: ${bd_user}, ${bd_pass}`);
 
-    fetch('http://localhost:8000/lib/teste.php', {
+    fetch('http://localhost:8000/lib/index.php',{
       method: 'POST',
       mode: 'cors', // força requisição CORS
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ bd_user: bd_user, bd_pass: bd_pass })
+      body: JSON.stringify({ bd_user: bd_user, bd_pass: bd_pass, action: 'login' })
     })
     .then(response => response.json())
     .then(data => {
       console.log("Resposta do servidor:", data);
 
       if (data && data.success) {
+        alert("Login bem-sucedido!");
         console.log("Conexão bem-sucedida! Dados: " + JSON.stringify(data.data));
       } else {
-        console.error("Erro:", data.message);
         alert("Login e/ou senha inválido");
+        console.error("Erro:", data.message);
       }
     })
     .catch(error => {
