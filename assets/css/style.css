@@ -1,5 +1,7 @@
 :root{
-  --corPadrao: white;
+  --corPadraoTexto: white;
+  --fonte1: "Poppins", sans-serif;
+  --fonte2: "Fleur De Leah", cursive;
 }
 
 .flex-column{
@@ -22,17 +24,23 @@
   justify-content: flex-start;
 }
 
-.flex-block{
+.flex-space{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-h6{
-  color: white;
+.filter-blur{
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20%);
 }
 
+h6{
+  color: var(--corPadraoTexto)
+}
+
+/* </TAG>.login */
 html, body{
   margin: 0;
   padding: 0;
@@ -144,3 +152,34 @@ main.login section.bottom{
     padding: 5px 10px;
   }
 }
+
+/* <TAG>.main */
+
+body.main{
+  background-image: url(../img/wallpaper-claro.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header.main, footer.main{
+  width: 100%;
+  padding-inline: 10px;
+  a{
+    text-decoration: none;
+    color: var(--corPadraoTexto);
+    font-size: 3vh;
+    font-family: "Poppins", sans-serif;
+  }
+
+  img{
+    width: 5vh;
+  }
+  button{
+    border: none;
+    background: none;
+    font-size: 3vh;
+    color: var(--corPadraoTexto);
+  }
+}
+
+
