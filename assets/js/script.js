@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }else{
         console.error("Erro:", data.message);
         window.location.href = "http://localhost:8000/src/login.html";
+        alert("Erro ao carregar a página. Por favor, faça login novamente.");
       }
     })
     .catch(error =>{
