@@ -71,3 +71,16 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 });
 
+function testealert(){
+  alert("Teste de alerta");
+}
+
+function dMensage(){
+  const msg = document.querySelector('#mensage');
+  msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+}
+
+function dNotification(){
+  const notification = document.querySelector('#notification');
+  notification.style.display = notification.style.display === 'block' ? 'none' : 'block';
+}

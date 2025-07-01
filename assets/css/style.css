@@ -163,6 +163,7 @@ body.main{
 
 header.main, footer.main{
   width: 100%;
+  max-width: 100%;
   padding-inline: 10px;
   a{
     text-decoration: none;
@@ -170,7 +171,6 @@ header.main, footer.main{
     font-size: 3vh;
     font-family: "Poppins", sans-serif;
   }
-
   img{
     width: 5vh;
   }
@@ -182,4 +182,17 @@ header.main, footer.main{
   }
 }
 
+main.main section.lateral_barr{
+  display: flex;
+  justify-content: right;
+  margin-right: 2vh;
+  section{
+    background-color: white;
+    display: inline-block;
+  }
+}
 
+main.main section.lateral_barr section.mensage{
+  max-height: 99%;
+  
+}

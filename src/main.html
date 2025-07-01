@@ -18,17 +18,42 @@
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="main">
+
   <header class="main filter-blur flex-space">
-    <div class="flex-center" style="gap: 5%;">
+    <div class="flex-center">
       <img src="../assets/img/nuvem.png" alt="Logo" title="Logo">
       <a id="bem_vindo_nome" href="#login">...</a>
     </div>
-    <button class="fa-solid fa-gear"></button>
+    <button href="#favoritos" class="fa-solid fa-star"></button>
+    <div class="flex-center">
+      <button onclick="dMensage()" class="fa-solid fa-envelope"></button>
+      <button onclick="dNotification()"" class="fa-solid fa-bell"></button>
+      <button class="fa-solid fa-gear"></button>
+    </div>
   </header>
+
   <main class="main">
-    
+
+    <section class="lateral_barr">
+      
+      <section id="mensage" class="mensage" style="display: block;"> <!-- Mudar display none/block-->
+        <div>
+          <h1>Mensagens</h1>
+        </div>
+      </section>
+
+      <section id="notification" class="notification" style="display: none;">
+        <div>
+          <h1>Notificação</h1>
+        </div>
+      </section>
+      
+    </section>
+
   </main>
+
   <footer class="main filter-blur"></footer>
+
   <script src="../assets/js/script.js"></script>
 </body>
 </html>
