@@ -76,11 +76,16 @@ function testealert(){
 }
 
 function dMensage(){
-  const msg = document.querySelector('#mensage');
-  msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+  const msg = document.querySelector('#mensage_usuarios');
+  msg.style.display = msg.style.display === 'flex' ? 'none' : 'flex';
 }
 
 function dNotification(){
   const notification = document.querySelector('#notification');
   notification.style.display = notification.style.display === 'block' ? 'none' : 'block';
+}
+
+function dConfig(){
+  const configuracao = document.querySelector('#configuracao');
+  configuracao.style.display = configuracao.style.display === 'block' ? 'none' : 'block';
 }

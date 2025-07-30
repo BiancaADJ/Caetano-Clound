@@ -28,7 +28,7 @@
     <div class="flex-center">
       <button onclick="dMensage()" class="fa-solid fa-envelope"></button>
       <button onclick="dNotification()"" class="fa-solid fa-bell"></button>
-      <button class="fa-solid fa-gear"></button>
+      <button onclick="dConfig()" class="fa-solid fa-gear"></button>
     </div>
   </header>
 
@@ -36,15 +36,43 @@
 
     <section class="lateral_barr">
       
-      <section id="mensage" class="mensage" style="display: block;"> <!-- Mudar display none/block-->
-        <div>
-          <h1>Mensagens</h1>
+      <section id="mensage_usuarios" class="mensage_usuarios flex-justify" style="display: flex;"> <!-- Mudar display none/block-->
+        <div class="usuarios flex-column">
+          <div id="mensagens.salvas_000002" class="flex-justify">
+            <img src="../assets/img/o-email.png" alt="Mensagens">
+            <div>
+              <h2>Mensagens Salvas</h2>
+              <p>Texto da última mensagem</p>
+            </div>
+          </div>
+
+          <div id="mensagens.salvas_000002" class="flex-justify">
+            <img src="../assets/img/o-email.png" alt="Mensagens">
+            <div>
+              <h2>Mensagens Salvas</h2>
+              <p>Texto da última mensagem</p>
+            </div>
+          </div>
+          <!-- Exibir usuários -->
+        </div>
+        <div class="mensagens">
+          <!-- Exibir mensagens -->
+          <div>
+            <p day="00/00/0000" time="00:00">Primeira mensagem</p>
+            <p>lorem</p>
+          </div>
         </div>
       </section>
 
       <section id="notification" class="notification" style="display: none;">
         <div>
           <h1>Notificação</h1>
+        </div>
+      </section>
+
+      <section id="configuracao" class="configuracao" style="display: none;">
+        <div>
+          <h1>Configuração</h1>
         </div>
       </section>
       
