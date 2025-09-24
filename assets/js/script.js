@@ -39,6 +39,7 @@ function login(action){
   }
 }
 
+/*
 document.addEventListener('DOMContentLoaded', function(){
   if(window.location.pathname.includes('/src/main.html')){ // Trocar página na versão final
     var bd_user = localStorage.getItem('bd_user');
@@ -70,22 +71,8 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 });
+*/
 
 function testealert(){
   alert("Teste de alerta");
-}
-
-function dMensage(){
-  const msg = document.querySelector('#mensage_usuarios');
-  msg.style.display = msg.style.display === 'flex' ? 'none' : 'flex';
-}
-
-function dNotification(){
-  const notification = document.querySelector('#notification');
-  notification.style.display = notification.style.display === 'block' ? 'none' : 'block';
-}
-
-function dConfig(){
-  const configuracao = document.querySelector('#configuracao');
-  configuracao.style.display = configuracao.style.display === 'block' ? 'none' : 'block';
 }
